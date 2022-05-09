@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.nav {
+  height: 5rem;
+  background: lightpink;
+  padding: 1rem 0;
+  color: #fff;
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.nav-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+.hero {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
+    url(./candy-pic.jpg) center/cover no-repeat;
+  min-height: calc(100vh - 5rem);
+  color: #fff;
+}
+.hero-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.hero-center p {
+  max-width: 35em;
+  margin-bottom: 1.25rem;
+}
+.hero-center .hero-btn {
+  color: #fff;
+  background: transparent;
+  padding: 0.5rem 1.25rem;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+}
