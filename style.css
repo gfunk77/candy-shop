@@ -11,6 +11,9 @@
   background: lightpink;
   padding: 1rem 0;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .nav-title {
   font-weight: 700;
@@ -24,17 +27,36 @@
   margin: 0 auto;
   /* border: 2px solid red; */
 }
+
 .hero {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5)),
-    url(./candy-pic.jpg) center/cover no-repeat;
   min-height: calc(100vh - 5rem);
+  background-color: #001524;
   color: #fff;
+  position: relative;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(./candy-pic.jpg) center/cover no-repeat;
+
+    color: #fff;
+  }
+}
+
 .hero-center {
   width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
   padding: 5rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 .hero-title {
   font-weight: 700;
@@ -44,6 +66,7 @@
   margin-bottom: 0.5rem;
 }
 .hero-center p {
+  margin: 0 auto;
   max-width: 35em;
   margin-bottom: 1.25rem;
 }
@@ -53,4 +76,8 @@
   padding: 0.5rem 1.25rem;
   text-transform: capitalize;
   border: 1px solid #fff;
+}
+.temp {
+  min-height: 100vh;
+  background-color: red;
 }
