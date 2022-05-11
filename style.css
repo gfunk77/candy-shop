@@ -65,6 +65,9 @@
   text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
+.text {
+  animation: texttop 5s ease-in-out 1;
+}
 .hero-center p {
   margin: 0 auto;
   max-width: 35em;
@@ -76,8 +79,29 @@
   padding: 0.5rem 1.25rem;
   text-transform: capitalize;
   border: 1px solid #fff;
+  animation: btnbottom 5s ease-in-out 1;
 }
 .temp {
   min-height: 100vh;
   background-color: red;
+}
+@keyframes texttop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes btnbottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
